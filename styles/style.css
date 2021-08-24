@@ -1,0 +1,63 @@
+.page {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.converter {
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  background-color: turquoise;
+}
+.title {
+  font-family: "Noto Sans", sans-serif;
+}
+
+.converter__inputs {
+  border: 1px solid grey;
+  background-color: lavender;
+  margin: 20px 15px 0 15px;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.converter__inputs--title,
+.converter__inputs--amount,
+.converter__inputs--from,
+.converter__inputs--to {
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 30px;
+}
+
+.converter__inputs--button {
+  margin-top: 15px;
+  width: 50%;
+}
+
+.converter__results {
+  margin: 20px 15px 20px 15px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid grey;
+  background-color: lightcoral;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.converter__results--result {
+  background-color: white;
+  width: 70%;
+  height: 30px;
+}
+
+.updating {
+  text-align: left;
+  font-family: "Noto Serif", serif;
+  font-size: 10px;
+}

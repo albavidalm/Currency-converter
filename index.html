@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency converter</title>
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="favicon.ico">
+</head>
+
+<body class="page">
+  <header class="title">
+    <h1>Currency converter</h1>
+  </header>
+
+  <main class="content">
+
+    <div class="converter">
+
+      <div class="converter__inputs">
+
+        <h2 class="converter__inputs--title">Amount</h2>
+        <input type="number" class="converter__inputs--amount js-amount" id="number" value="1">
+
+        <h2 class="converter__inputs--title">From:</h2>
+        <select name="currency" class="converter__inputs--from js-currency" onchange="updatevalue()"></select>
+
+        <button class="converter__inputs--button">Change</button>
+
+        <h2 class="converter__inputs--title">To:</h2>
+        <select name="currency" class="converter__inputs--to js-currency" onchange="updatevalue()"></select>
+
+        <div class="converter__results">
+          <p class="converter__results--result js-result">1,00€ = 0,085$</p>
+        </div>
+
+      </div>
+      <div class="updating">
+        <h3 class="updating__title">Last upadate 24/08/2021</h3>
+      </div>
+
+  </main>
+  <footer class="footer">Alba Vidal GitHub</footer>
+
+
+
+  <script type="text/javascript" src="./js/main.js"></script>
+</body>
+
+</html>
