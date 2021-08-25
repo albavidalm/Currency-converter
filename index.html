@@ -26,15 +26,19 @@
       <div class="converter__inputs">
 
         <h2 class="converter__inputs--title">Amount</h2>
-        <input type="number" class="converter__inputs--amount js-amount" id="number" value="1">
+        <input type="number" class="converter__inputs--amount js-amount" id="number" value="1" onchange="modifiedValue(this)">
 
         <h2 class="converter__inputs--title">From:</h2>
-        <select name="currency" class="converter__inputs--from js-currency" onchange="updatevalue()"></select>
+        <select name="currency" class="converter__inputs--from js-currency" onchange="updatevalue()">
+          <option value="A" class="js-optionFrom">Valor A</option>
+        </select>
 
         <button class="converter__inputs--button">Change</button>
 
         <h2 class="converter__inputs--title">To:</h2>
-        <select name="currency" class="converter__inputs--to js-currency" onchange="updatevalue()"></select>
+        <select name="currency" class="converter__inputs--to js-currency" onchange="updatevalue()">
+          <option value="2" class="js-optionTo">Valor A</option>
+        </select>
 
         <div class="converter__results">
           <p class="converter__results--result js-result">1,00€ = 0,085$</p>
